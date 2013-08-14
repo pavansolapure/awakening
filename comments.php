@@ -55,6 +55,10 @@ if ( post_password_required() )
 	
 	<?php 
 	
+	$commenter = wp_get_current_commenter();
+	$req = get_option( 'require_name_email' );
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+	
 	$comment_args = array( 'title_reply'=>'Speak Your Mind',
 
 	'fields' => apply_filters( 'comment_form_default_fields', 

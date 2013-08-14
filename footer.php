@@ -43,7 +43,7 @@
 							echo $copyright; 
 						  } else {	  
 						  ?> 
-						  &copy; 2013 All Rights Reserved. <span class="brand-note"> | Design by <a href="http://www.opencodez.com/" target="_blank">OpenCodez</a></span>
+						  All Rights Reserved. <span class="brand-note"> | Design by <a href="http://www.opencodez.com/" target="_blank">OpenCodez</a></span>
 						  <?php
 						  }
 						  ?> <span class="brand-note"> | Design by <a href="http://www.opencodez.com/" target="_blank">OpenCodez</a></span>
@@ -53,8 +53,7 @@
 			</div>
 
 			<div class="large-6 columns">
-				<ul class="social-row inline-list right">
-				
+				<ul class="social-row inline-list right">				
 				<?php if(of_get_option('rss_url')!=''):?>
 					<li><a href="<?php echo of_get_option('rss_url');?>" alt="RSS" title="RSS" class="foundicon-rss"></a></li>
 				<?php endif;?>
@@ -77,33 +76,16 @@
 				
 				<?php if(of_get_option('linkedin_url')!=''):?>	
 					<li><a href="<?php echo of_get_option('linkedin_url');?>" alt="Linkedin" title="Linkedin" class="foundicon-linkedin"></a></li>
-				<?php endif;?>
-				
-				
+				<?php endif;?>				
 				</ul>	
 			</div>		
 
 		</div>	
 		
-	</div><!-- #copyright --> 	
-	
+	</div><!-- #copyright --> 		
 </footer>
-
-
 <!-- End Footer -->
-
-<?php wp_footer(); ?>
-<script type='text/javascript'>
-	$(document).foundation();
-</script>
-<!--Tracking Code--> 
-<?php 
-$tracking_code = of_get_option('google_analytics_code'); 
-if(isset($tracking_code)) {
-echo $tracking_code;
-}
-?>
-<!--/Tracking Code--> 
 </div> <!-- #bodychild --> 
+<?php wp_footer(); ?>
 </body>
 </html>

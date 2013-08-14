@@ -672,6 +672,21 @@ function awakening_wp_head() {
 add_action( 'wp_head', 'awakening_wp_head');
 endif;	
 
+if ( ! function_exists( 'awakening_wp_footer' ) ) :
+function awakening_wp_footer() {
+	$tracking_code = of_get_option('google_analytics_code'); 
+	if(isset($tracking_code)) {
+		echo $tracking_code;
+	}
+	?>	
+	<script type='text/javascript'>
+	$(document).foundation();
+	</script>
+	<?php
+}
+add_action( 'wp_footer', 'awakening_wp_footer',100);
+endif;	
+
 if ( ! function_exists( 'excerpt_read_more' ) ) :
 
 function excerpt_read_more($text) {
