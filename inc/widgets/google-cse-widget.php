@@ -22,14 +22,11 @@ class GoogleCSE_Widget extends WP_Widget {
 
 			/* Create the widget. */
 			$this->WP_Widget( 'widget-google-cse', __('Awakening Google Custom Search', 'awakening'), $widget_ops, $control_ops );		
-			
-			/* Add options to database */	
-			add_option($google_cse_unique_id);
-			add_option($search_results_page_url);			
-			
+		
         }
 
-        public function form( $instance ) {
+        public function form( $instance ) {		
+			$instance = wp_parse_args( (array) $instance, array( 'google_cse_unique_id' => '', 'search_results_page_url' => '') );		
 			if ( isset( $instance[ 'google_cse_unique_id' ] ) ) {
 				$google_cse_unique_id = $instance[ 'google_cse_unique_id' ];
 			}

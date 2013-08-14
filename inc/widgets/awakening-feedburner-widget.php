@@ -21,17 +21,13 @@ class Feedburner_Widget extends WP_Widget {
 			$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'widget-feedburner' );
 
 			/* Create the widget. */
-			$this->WP_Widget( 'widget-feedburner', __('Awakening Feedburner','awakening'), $widget_ops, $control_ops );		
-			
-			/* Add options to database */	
-			add_option($feedburner_unique_id);
-			add_option($feedburner_style);	
-			add_option($feedburner_title_text);
-			add_option($feedburner_sub_text);
-			
+			$this->WP_Widget( 'widget-feedburner', __('Awakening Feedburner','awakening'), $widget_ops, $control_ops );					
         }
 
         public function form( $instance ) {
+		
+			$instance = wp_parse_args( (array) $instance, array( 'feedburner_unique_id' => '', 'feedburner_style' => '',  'feedburner_title_text' => '', 'feedburner_sub_text' => ''));
+			
 			if ( isset( $instance[ 'feedburner_unique_id' ] ) ) {
 				$feedburner_unique_id = $instance[ 'feedburner_unique_id' ];
 			}
