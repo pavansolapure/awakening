@@ -40,6 +40,8 @@ if(isset($layout)) {
 		case "sidebar-content-sidebar":			
 			get_template_part( 'layouts/sidebar', 'content-sidebar' ); 			
 			break;				
+		default:
+			get_template_part( 'layouts/content', 'sidebar' );			
 	}	
 } else {
 	//load default template content/sidebar

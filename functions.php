@@ -687,19 +687,19 @@ function awakening_wp_footer() {
 add_action( 'wp_footer', 'awakening_wp_footer',100);
 endif;	
 
-if ( ! function_exists( 'excerpt_read_more' ) ) :
+if ( ! function_exists( 'awakening_excerpt_read_more' ) ) :
 
-function excerpt_read_more($text) {
+function awakening_excerpt_read_more($text) {
    return str_replace('[...]', '<span><a href="'.get_permalink().'" class="readmore">Continue reading &rarr;</a></span>', $text); }
-add_filter('the_excerpt', 'excerpt_read_more');
+add_filter('the_excerpt', 'awakening_excerpt_read_more');
 
 endif;
 
-if ( ! function_exists( 'custom_excerpt_length' ) ) :
+if ( ! function_exists( 'awakening_custom_excerpt_length' ) ) :
 
-function custom_excerpt_length($length) {
+function awakening_custom_excerpt_length($length) {
 	return 85;
 }
-add_filter('excerpt_length', 'custom_excerpt_length');
+add_filter('excerpt_length', 'awakening_custom_excerpt_length');
 
 endif;

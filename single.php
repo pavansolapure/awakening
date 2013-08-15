@@ -33,6 +33,9 @@ get_header(); ?>
 				$col=6; 
 				$side_bar_to_display = "both";	
 				break;						
+			default:
+				$col=9; 
+				$side_bar_to_display = "right";				
 		}		
 	}
 ?>
