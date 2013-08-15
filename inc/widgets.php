@@ -12,17 +12,15 @@
 ?>
 
 <?php
-
 //Google Custom Search Widget
-require_once dirname( __FILE__ ) . '/widgets/google-cse-widget.php';
+get_template_part( 'inc/widgets/google-cse', 'widget' );
 
 //Archive Widget adhering to Foundation CSS
-require_once dirname( __FILE__ ) . '/widgets/awakening-archive-widget.php';
+get_template_part( 'inc/widgets/awakening-archive', 'widget' );
 
 //Category Widget adhering to Foundation CSS
-require_once dirname( __FILE__ ) . '/widgets/awakening-category-widget.php';
+get_template_part( 'inc/widgets/awakening-category', 'widget' );
 
 //Feedburner Widget
-require_once dirname( __FILE__ ) . '/widgets/awakening-feedburner-widget.php';
-
+get_template_part( 'inc/widgets/awakening-feedburner', 'widget' );
 ?>
