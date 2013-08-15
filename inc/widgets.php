@@ -24,4 +24,5 @@ require_once dirname( __FILE__ ) . '/widgets/awakening-category-widget.php';
 
 //Feedburner Widget
 require_once dirname( __FILE__ ) . '/widgets/awakening-feedburner-widget.php';
+
 ?>

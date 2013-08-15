@@ -134,7 +134,7 @@ function optionsframework_options() {
 		'name' => "Page Layout",
 		'desc' => "These are layouts for your posts & archive. Pages will follow different templates that are available in template dropdown.",
 		'id' => "page_layouts",
-		'std' => "2c-r-fixed",
+		'std' => "content-sidebar",
 		'type' => "images",
 		'options' => array(
 			'full-width' => $imagepath . 'full-width.png',
