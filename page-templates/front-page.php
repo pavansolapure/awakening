@@ -30,7 +30,7 @@ get_header(); ?>
 		 </div>	
 		<?php endif; ?>	
 		<!--blurb-->		 
-		<div class="customdivider"><img src="<?php echo $imagepath;?>sep-shadow.png" alt=""></div>
+		<div class="customdivider"><img src="<?php echo $imagepath;?>/sep-shadow.png" alt=""></div>
 		</div>	
 	
 		<div class="large-<?php echo $divclass; ?> columns">
