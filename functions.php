@@ -85,8 +85,15 @@ function awakening_setup() {
 	/*
 	 * Loads custom Widgets that are part of this theme.
 	 */
-	 require_once(get_template_directory() . '/inc/widgets.php');
-	
+ 
+	 //Google Custom Search Widget
+	 require_once(get_template_directory() . '/inc/widgets/google-cse-widget.php');
+	 //Feedburner Widget
+	 require_once(get_template_directory() . '/inc/widgets/awakening-feedburner-widget.php');
+	 //Category Widget adhering to Foundation CSS
+	 require_once(get_template_directory() . '/inc/widgets/awakening-category-widget.php');
+	 //Archive Widget adhering to Foundation CSS
+	 require_once(get_template_directory() . '/inc/widgets/awakening-archive-widget.php');	
 }
 endif;
 add_action( 'after_setup_theme', 'awakening_setup' );
