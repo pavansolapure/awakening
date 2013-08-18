@@ -113,10 +113,4 @@ class Awakening_Widget_Categories extends WP_Widget {
 	}
 
 }
-
-function awakening_category_widgets_register() {
-	register_widget( 'Awakening_Widget_Categories' );
-}
-
-add_action( 'widgets_init', 'awakening_category_widgets_register' );
 ?>

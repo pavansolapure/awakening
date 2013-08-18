@@ -77,10 +77,4 @@ class Awakening_Widget_Archives extends WP_Widget {
 <?php
 	}
 }
-
-function awakening_archive_widgets_register() {
-	register_widget( 'Awakening_Widget_Archives' );
-}
-
-add_action( 'widgets_init', 'awakening_archive_widgets_register' );
 ?>

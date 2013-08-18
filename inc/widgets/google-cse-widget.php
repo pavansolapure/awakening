@@ -84,9 +84,4 @@ class GoogleCSE_Widget extends WP_Widget {
 
 }
 
-function gcse_register_widgets() {
-	register_widget( 'GoogleCSE_Widget' );
-}
-
-add_action( 'widgets_init', 'gcse_register_widgets' );
 ?>

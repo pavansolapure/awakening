@@ -133,10 +133,4 @@ class Feedburner_Widget extends WP_Widget {
         }
 
 }
-
-function feedburner_register_widgets() {
-	register_widget( 'Feedburner_Widget' );
-}
-
-add_action( 'widgets_init', 'feedburner_register_widgets' );
 ?>
