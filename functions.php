@@ -80,23 +80,33 @@ function awakening_setup() {
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
-	
-	/*
-	 * Loads custom Widgets that are part of this theme.
-	 */
- 
-	 //Google Custom Search Widget
-	 require_once(get_template_directory() . '/inc/widgets/google-cse-widget.php');
-	 //Feedburner Widget
-	 require_once(get_template_directory() . '/inc/widgets/awakening-feedburner-widget.php');
-	 //Category Widget adhering to Foundation CSS
-	 require_once(get_template_directory() . '/inc/widgets/awakening-category-widget.php');
-	 //Archive Widget adhering to Foundation CSS
-	 require_once(get_template_directory() . '/inc/widgets/awakening-archive-widget.php');	
+	set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop	
+
 }
 endif;
 add_action( 'after_setup_theme', 'awakening_setup' );
+
+//Google Custom Search Widget
+require(get_template_directory() . '/inc/widgets/google-cse-widget.php');
+
+//Feedburner Widget
+require(get_template_directory() . '/inc/widgets/awakening-feedburner-widget.php');
+
+//Category Widget adhering to Foundation CSS
+require(get_template_directory() . '/inc/widgets/awakening-category-widget.php');
+
+//Archive Widget adhering to Foundation CSS
+require(get_template_directory() . '/inc/widgets/awakening-archive-widget.php');	
+
+if ( ! function_exists( 'awakening_load_custom_widgets' ) ):	
+function awakening_load_custom_widgets() {
+	register_widget( 'GoogleCSE_Widget' );	
+	register_widget( 'Feedburner_Widget' );
+	register_widget( 'Awakening_Widget_Archives' );
+	register_widget( 'Awakening_Widget_Categories' );
+}
+endif;
+add_action('widgets_init', 'awakening_load_custom_widgets');
 
 
 /**
