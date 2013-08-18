@@ -223,7 +223,7 @@ function optionsframework_options() {
 		
 	$options[] = array(
 		'name' => __('Blurb Settings - Following section allows you to configure your blurb on home page.', 'options_check'),
-		//'desc' => __('<b>Following section will allow you to set text and button settings</b>', 'options_check'),
+		'desc' => __('<b>Following section will allow you to set text and button settings</b>', 'options_check'),
 		'type' => 'info');				
 		
 	$options[] = array(
