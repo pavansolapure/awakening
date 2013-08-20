@@ -43,7 +43,7 @@
 							echo $copyright; 
 						  } else {	  
 						  ?> 
-						  All Rights Reserved. <span class="brand-note"> | Design by <a href="http://www.opencodez.com/" target="_blank">OpenCodez</a></span>
+						  All Rights Reserved.
 						  <?php
 						  }
 						  ?> <span class="brand-note"> | Design by <a href="http://www.opencodez.com/" target="_blank">OpenCodez</a></span>
