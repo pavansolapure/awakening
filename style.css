@@ -295,6 +295,13 @@ img.wp-smiley,
   max-width: 100%; 
 }
 
+/* Make sure videos and embeds fit their containers. */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
 
 /* Extended Footer */
 
@@ -585,8 +592,7 @@ time {
 	 line-height: 20px;
 }
 
-.email {
-     #background: url("http://lh6.googleusercontent.com/-mrp8bAEiUas/ULc875mjBCI/AAAAAAAAAAY/ORduMx38cYI/s800/email.png") no-repeat scroll 10px center #FFFFFF;
+.email {     
 	 border-radius: 4px 4px 4px 4px;
 	 border: 0px none;
      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.05) inset;
