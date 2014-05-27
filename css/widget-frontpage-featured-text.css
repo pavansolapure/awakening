@@ -1,0 +1,34 @@
+.widget-lib-font-awesome {
+	font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
+}
+.icon-select {
+	margin: 10px 0;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-select p.label {
+	margin-bottom: 3px; 
+}
+.icon-select input, .icon-select select {
+	padding-top: 5px;
+}
+.icon-select select {
+	font-size: 14px;
+	width: 100%; 
+}
+
+fieldset {
+    font-family: sans-serif;
+    border: 2px solid #2A95C5;    
+	padding: 5px;
+	margin-bottom:15px;
+}
+
+fieldset legend {
+    background: #2A95C5;
+    color: #fff;
+    padding: 4px 7px ;
+    font-size: 13px;
+    border-radius: 5px;
+    #box-shadow: 0 0 0 5px #ddd;
+    margin-left: 20px;
+}
