@@ -1,4 +1,4 @@
-awakening.1.0
+Awakening
 =============
 
 Awakening 1.0
